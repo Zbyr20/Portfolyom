@@ -214,7 +214,7 @@ export default function App() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="glass-panel p-12 rounded-[3rem] mb-24 group hover:border-cyber-blue/50 transition-all"
+          className="glass-panel p-12 rounded-[3rem] mb-12 group hover:border-cyber-blue/50 transition-all"
         >
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 aspect-video bg-white/5 rounded-2xl flex items-center justify-center border border-white/5">
@@ -239,6 +239,40 @@ export default function App() {
                 Siteyi Ziyaret Et
                 <ChevronDown className="w-4 h-4 -rotate-90 opacity-0 group-hover:opacity-100 transition-opacity" />
               </a>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* New Project: Celestial Dashboard Hub */}
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="glass-panel p-12 rounded-[3rem] mb-24 group hover:border-cyber-red/50 transition-all"
+        >
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="flex items-center gap-3 mb-6">
+                <Zap className="w-6 h-6 text-cyber-red" />
+                <span className="text-xs font-mono uppercase tracking-[0.3em] text-cyber-red">Admin Dashboard</span>
+              </div>
+              <h3 className="text-4xl font-display uppercase mb-6">Celestial Dashboard Hub</h3>
+              <p className="text-gray-400 text-lg leading-relaxed mb-8">
+                Veri görselleştirme ve yönetim süreçlerini tek bir merkezde toplayan, göksel (celestial) temalı modern bir dashboard arayüzü. Karmaşık verileri şık ve anlaşılır grafiklerle sunan, kullanıcı deneyimi odaklı bir kontrol paneli.
+              </p>
+              <a 
+                href="https://celestial-dashboard-hub.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-white text-black font-bold rounded-2xl hover:bg-cyber-red transition-colors group"
+              >
+                <ExternalLink className="w-5 h-5" />
+                Dashboard'u Aç
+                <ChevronDown className="w-4 h-4 -rotate-90 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </a>
+            </div>
+            <div className="aspect-video bg-white/5 rounded-2xl flex items-center justify-center border border-white/5">
+              <Cpu className="w-24 h-24 text-white/10 group-hover:text-cyber-red/20 transition-colors" />
             </div>
           </div>
         </motion.div>
