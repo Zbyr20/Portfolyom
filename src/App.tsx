@@ -180,7 +180,7 @@ export default function App() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="glass-panel p-12 rounded-[3rem] mb-24 group hover:border-cyber-green/50 transition-all"
+          className="glass-panel p-12 rounded-[3rem] mb-12 group hover:border-cyber-green/50 transition-all"
         >
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -205,6 +205,40 @@ export default function App() {
             </div>
             <div className="aspect-video bg-white/5 rounded-2xl flex items-center justify-center border border-white/5">
               <Code2 className="w-24 h-24 text-white/10 group-hover:text-cyber-green/20 transition-colors" />
+            </div>
+          </div>
+        </motion.div>
+
+        {/* New Project: Okul Öncesi Eğitmeni */}
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="glass-panel p-12 rounded-[3rem] mb-24 group hover:border-cyber-blue/50 transition-all"
+        >
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="order-2 md:order-1 aspect-video bg-white/5 rounded-2xl flex items-center justify-center border border-white/5">
+              <Layers className="w-24 h-24 text-white/10 group-hover:text-cyber-blue/20 transition-colors" />
+            </div>
+            <div className="order-1 md:order-2">
+              <div className="flex items-center gap-3 mb-6">
+                <Zap className="w-6 h-6 text-cyber-blue" />
+                <span className="text-xs font-mono uppercase tracking-[0.3em] text-cyber-blue">Web Platform</span>
+              </div>
+              <h3 className="text-4xl font-display uppercase mb-6">Okul Öncesi Eğitmeni</h3>
+              <p className="text-gray-400 text-lg leading-relaxed mb-8">
+                Okul öncesi eğitimciler için tasarlanmış, modern ve kullanıcı dostu bir kaynak paylaşım platformu. Eğitim materyallerine hızlı erişim ve topluluk etkileşimi odaklı bir çalışma.
+              </p>
+              <a 
+                href="https://okul-ncesi-egitmeni.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-white text-black font-bold rounded-2xl hover:bg-cyber-blue transition-colors group"
+              >
+                <ExternalLink className="w-5 h-5" />
+                Siteyi Ziyaret Et
+                <ChevronDown className="w-4 h-4 -rotate-90 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </a>
             </div>
           </div>
         </motion.div>
